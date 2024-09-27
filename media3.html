@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .food-item {
+            width: 250px;
+            
+            border: 2px solid black;
+            background-color:pink;
+            
+
+        }
+
+        .fooditem,.adress{
+            display: flex;
+            gap: 65px;
+        }
+        .fooditem1,.adress1{
+            display: flex;
+            gap: 78px;
+        }
+        .fooditem2,.adress2{
+            display: flex;
+            gap: 90px;
+        }
+
+    
+        
+
+        @media screen and (max-width:424px) {
+            .food-items {
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                gap: 10px;
+                background-color: yellowgreen;
+                justify-content: center;
+            
+            }
+            .food-item1,.fooditem2,.fooditem span{
+                font-size: 1rem;
+
+            }
+            .food-item1,.fooditem2,.food-item > h3{
+                font-size: 1.7rem;
+
+            }
+            .adress1,.adress2,.adress > h4{
+                font-size: 1.2rem;
+
+            }
+
+
+        }
+
+        @media screen and (min-width:425px) and (max-width:768px) {
+            .food-items {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 10px;
+                background-color: violet;
+                justify-content: space-around;
+
+            }
+        }
+
+        @media screen and (min-width:769px) and (max-width:1024px) {
+            .food-items {
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+                background-color: lightsalmon;
+
+            }
+        }
+        @media screen and (min-width:1025px) and (max-width:1440px){
+            .food-items {
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                gap: 10px;
+                align-items: center;
+                justify-content: center;
+                background-color: aquamarine;
+
+            }
+        }
+        @media screen and (min-width:1441px){
+            .food-items{
+                display: grid;
+                grid-template-columns: repeat(6,1fr);
+                background-color: orange;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="food-items">
+        <div class="food-item">
+            <img src="https://assets.architecturaldigest.in/photos/66ac9845a2e1f6bb66de9e22/master/w_1600%2Cc_limit/The%2520pendant%2520lights%2520crafted%2520from%2520natural%2520cane%2520add%2520oodles%2520of%2520charm%2520to%2520Foo.jpg"
+                width="250px" height="200px">
+
+            <div class="fooditem1">
+                <h3>Aradhya Grand</h3>
+                <span>3.7</span>
+            </div>
+            <div class="adress1">
+                <h4>Sumanali,Banglore</h4>
+                <span>5.4km</span>
+            </div>
+        </div>
+
+
+        <div class="food-item">
+            <img src="https://img.freepik.com/premium-photo/restaurant-with-green-leaf-ceiling_763111-305022.jpg"
+                width="250px" height="200px">
+
+            <div class="fooditem2">
+                <h3>Akanksha coffine</h3>
+                <span>4.2</span>
+            </div>
+            <div class="adress2">
+                <h4>Brodipet,CHpet</h4>
+                <span>4.4km</span>
+            </div>
+        </div>
+
+
+        <div class="food-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStv1zPqzboMNdjLGJ5JNQEuEF2WZYxq51fOniqoM5gQbuDFuwHovin9jfoFVyYXDuqrxg&usqp=CAU"
+                width="250px" height="200px">
+
+            <div class="fooditem">
+                <h3> Nagarjuna Grand</h3>
+                <span>3.2</span>
+            </div>
+            <div class="adress">
+                <h4>Lb nagar,hyderabad</h4>
+                <span>4.2km</span>
+            </div>
+        </div>
+
+
+        <div class="food-item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/29/f5/58/interior.jpg?w=600&h=-1&s=1"
+                width="250px" height="200px">
+
+            <div class="fooditem">
+                <h3>Ruchis Restuarent</h3>
+                <span>4.3</span>
+            </div>
+            <div class="adress">
+                <h4>Amerpet,hyderabad</h4>
+                <span>6.8km</span>
+            </div>
+        </div>
+        <div class="food-item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/30/54/b2/bidri-ambience.jpg?w=600&h=-1&s=1"
+                width="250px" height="200px">
+
+            <div class="fooditem">
+                <h3>Tripod Restuarent</h3>
+                <span>4.3</span>
+            </div>
+            <div class="adress">
+                <h4>miyapur,hyderabad</h4>
+                <span>6.2km</span>
+            </div>
+        </div>
+        <div class="food-item">
+            <img src="https://t3.ftcdn.net/jpg/03/24/73/92/360_F_324739203_keeq8udvv0P2h1MLYJ0GLSlTBagoXS48.jpg"
+                width="250px" height="200px">
+
+            <div class="fooditem">
+                <h3>Andra Restuarent</h3>
+                <span>6.3</span>
+            </div>
+            <div class="adress">
+                <h4>kukatpally,hyderabad</h4>
+                <span>5km</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+</body>
+</html>
+</body>
+</html>
